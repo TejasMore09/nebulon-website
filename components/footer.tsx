@@ -25,7 +25,7 @@ export default function Footer() {
     },
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/nebulon-transstadia-0489b13b5',
+      href: 'https://www.linkedin.com/company/transstadia-institute/',
       label: 'LinkedIn',
     },
   ];

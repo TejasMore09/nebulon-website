@@ -53,7 +53,7 @@ export default function RegisterCTA() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <a
-            href="https://unstop.com/p/nebulon26-2026-transstadia-education-and-research-foundation-1654239"
+            href="https://unstop.com/o/viwuzEa?utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Logged_out_user"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"

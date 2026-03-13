@@ -132,7 +132,9 @@ export default function FAQ() {
             href="mailto:contact@nebulon.com"
             className="inline-block px-6 py-3 glass-dark border-glow rounded-lg text-electric-blue font-semibold hover:border-electric-blue/50 transition-colors duration-300"
           >
-            Contact Us : +91 9930265897 | +91 83560 76031
+            <span className="block">Contact Us</span>
+            <span className="block">Tejas More - +91 9930265897</span>
+            <span className="block">Ayush Ahirwar - +91 83560 76031</span>
           </a>
         </motion.div>
       </motion.div>

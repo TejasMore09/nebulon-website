@@ -35,7 +35,7 @@ export default function BackgroundEffects() {
 
     const particles: Particle[] = [];
 
-    // Create particles
+    // Create particles - responsive count based on screen size
     const createParticles = () => {
       const colors = [
         'rgba(106, 0, 255, 0.5)',
@@ -43,7 +43,11 @@ export default function BackgroundEffects() {
         'rgba(255, 46, 154, 0.3)',
       ];
 
-      for (let i = 0; i < 50; i++) {
+      // Reduce particle count on mobile for better performance
+      const isMobile = window.innerWidth < 768;
+      const particleCount = isMobile ? 20 : 50;
+
+      for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
@@ -119,13 +123,13 @@ export default function BackgroundEffects() {
 
   return (
     <>
-      {/* Canvas for particles */}
+      {/* Canvas for particles - responsive opacity */}
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 pointer-events-none z-0 opacity-60"
+        className="fixed inset-0 pointer-events-none z-0 opacity-40 sm:opacity-50 md:opacity-60"
       />
 
-      {/* Animated gradient orbs */}
+      {/* Animated gradient orbs - responsive sizes */}
       <motion.div
         className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
         initial={{ opacity: 0 }}
@@ -134,7 +138,8 @@ export default function BackgroundEffects() {
       >
         {/* Purple Nebula */}
         <motion.div
-          className="absolute w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl"
+          className="absolute rounded-full blur-3xl bg-neon-purple/20 
+            w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96"
           animate={{
             x: [0, 50, 0],
             y: [0, 30, 0],
@@ -146,13 +151,14 @@ export default function BackgroundEffects() {
           }}
           style={{
             top: '10%',
-            right: '10%',
+            right: '5%',
           }}
         />
 
         {/* Blue Nebula */}
         <motion.div
-          className="absolute w-96 h-96 bg-electric-blue/15 rounded-full blur-3xl"
+          className="absolute rounded-full blur-3xl bg-electric-blue/15
+            w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96"
           animate={{
             x: [0, -40, 0],
             y: [0, -50, 0],
@@ -164,14 +170,15 @@ export default function BackgroundEffects() {
             delay: 2,
           }}
           style={{
-            bottom: '15%',
-            left: '10%',
+            bottom: '10%',
+            left: '5%',
           }}
         />
 
-        {/* Pink Nebula */}
+        {/* Pink Nebula - hidden on mobile */}
         <motion.div
-          className="absolute w-96 h-96 bg-neon-pink/10 rounded-full blur-3xl"
+          className="absolute rounded-full blur-3xl bg-neon-pink/10
+            hidden sm:block w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96"
           animate={{
             x: [0, 30, 0],
             y: [0, -40, 0],
@@ -184,7 +191,7 @@ export default function BackgroundEffects() {
           }}
           style={{
             top: '50%',
-            right: '20%',
+            right: '10%',
           }}
         />
       </motion.div>
