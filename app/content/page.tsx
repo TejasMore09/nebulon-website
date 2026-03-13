@@ -43,7 +43,7 @@ const contentData: MediaContent[] = [
     description:
       "Official teaser video for Nebulon'26 techfest featuring innovation and gaming championships.",
     hashtags: ['#Nebulon26', '#Hackathon', '#Innovation'],
-    mediaUrls: ['/get ready nebulon video .mp4'],
+    mediaUrls: ['/nebulon-teaser.mp4'],
     duration: '0:30',
     eventDate: '2026-03-11',
     socials: nebulonSocials,
@@ -55,7 +55,7 @@ const contentData: MediaContent[] = [
     description:
       'Exclusive interaction session with Mr. Gaston during Nebulon Techfest.',
     hashtags: ['#Nebulon26', '#TechTalk', '#Innovation', "#GastonDSouza"],
-    mediaUrls: ['/mr gaston 4 grp.mp4'],
+    mediaUrls: ['/gaston-group.mp4'],
     duration: '0:34',
     eventDate: '2026-03-10',
     socials: nebulonSocials,
@@ -67,7 +67,7 @@ const contentData: MediaContent[] = [
     description:
       'The Boss has arrived discussing innovation and challenges.',
     hashtags: ['#Nebulon26', '#Interview', '#Innovation', "BGMIChampionship", "#GastonDSouza"],
-    mediaUrls: ['/mr gaston interview.mp4'],
+    mediaUrls: ['/gaston-interview.mp4'],
     duration: '0:34',
     eventDate: '2026-03-12',
     socials: nebulonSocials,
