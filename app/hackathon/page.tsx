@@ -8,9 +8,6 @@ import Timeline from '@/components/timeline';
 import Domains from '@/components/domains';
 import Prizes from '@/components/prizes';
 import Eligibility from '@/components/eligibility';
-import Sponsors from '@/components/sponsors';
-import Judges from '@/components/judges';
-import Gallery from '@/components/gallery';
 import FAQ from '@/components/faq';
 import RegisterCTA from '@/components/register-cta';
 import Footer from '@/components/footer';
@@ -35,9 +32,6 @@ export default function HackathonPage() {
       <Domains />
       <Prizes />
       <Eligibility />
-      <Sponsors />
-      <Judges />
-      <Gallery />
       <FAQ />
       <RegisterCTA />
       <Footer />
